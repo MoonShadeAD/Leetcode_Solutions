@@ -19,6 +19,9 @@ Output: 4
 
 Intuition: Binary Search Technique
 Approach: To solve this problem, we can use the binary search algorithm. The idea is to repeatedly divide the search interval in half. If the value of the target is less than the item in the middle of the interval, we narrow the interval to the lower half. Otherwise, we narrow it to the upper half. We continue this process until we find the target or the interval is empty. As for the insertion point, if the target is not found, the left pointer will indicate the position where the target can be inserted to maintain the sorted order. We can solve the edge cases by checking the left and right pointers after the loop.
+Complexity Analysis:
+Time Complexity: O(log n), where n is the number of elements in the array. This is because we are halving the search space with each iteration.
+Space Complexity: O(1), as we are using a constant amount of extra space.
  */
 
 public class Search_Insert_Position
